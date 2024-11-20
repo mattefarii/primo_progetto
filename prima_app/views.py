@@ -21,7 +21,7 @@ def variabili(request):
     }
     return render(request, "variabili.html", context)
 
-def variabili(request):
+def index(request):
     context = {
         "link1" : "Homepage",
         "link2" : "Welcome",
