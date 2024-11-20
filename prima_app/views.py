@@ -20,3 +20,14 @@ def variabili(request):
         "var3" : "Terza variabile",
     }
     return render(request, "variabili.html", context)
+
+def variabili(request):
+    context = {
+        "link1" : "Homepage",
+        "link2" : "Welcome",
+        "link3" : "Lista",
+        "link4" : "Chi siamo",
+        "link5" : "Variabili",
+        "link6" : "Index",
+    }
+    return render(request, "index.html", context)
