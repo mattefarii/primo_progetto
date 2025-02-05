@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>ROOT MENU'</h1>
-    <ol>
-    <a href="/admin">Pannello admin</a>
-    <li><a href = "{% url 'prima_app:index'%}">Prima app</a></li>
-    <li><a href = "{% url 'seconda_app:index2'%}">Seconda app</a></li>
+{% extends "base.html" %}
 
-    </ol>
-</body>
-</html>
+{% block title %} {{ block.super }} | Index root {% endblock title %}
+    
+{% block content%}
+
+{% endblock content %}
+
+    
