@@ -1,0 +1,21 @@
+{%extends 'base.html'%}
+
+{% block title %}
+    {{ corso.titolo }}
+{% endblock title %}
+
+
+{% block content %}
+    {% for corso in corsi %}
+        corsi_ordinati = Corso.objects.order_by("data_inizio")
+        <p> Titolo: {{ corso.titolo }} </p>
+        <p> Data inizio: {{ corso.data_inizio }} </p>
+
+
+        <hr>
+    {% endfor %}
+
+  
+
+{% endblock content %}
+

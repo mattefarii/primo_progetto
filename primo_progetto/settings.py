@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'prima_app',
     'seconda_app',
-    'news'
+    'news',
+    'corsi_formazione',
 ]
 
 MIDDLEWARE = [

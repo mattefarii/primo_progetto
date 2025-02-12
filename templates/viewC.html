@@ -1,0 +1,16 @@
+{%extends 'base.html'%}
+
+{% block title %}
+    {{ corso.titolo }}
+{% endblock title %}
+
+
+{% block content %}
+    {% for corso in corsi %}
+    {{ corso_dopo_data }}
+
+        <hr>
+    {% endfor %}
+
+   
+{% endblock content %}

@@ -74,7 +74,7 @@ def queyBase (request):
     articoli_periodo = Articolo.objects.filter(data__range=(datetime.date(2023, 1, 1), datetime.date(2023, 12, 31)))
 
     #10 gli articoli scritti da giornalisti nati prima del 1980
-    giornalisti_nati = Giornalist.objects.filter(anno_di_nascita__lt=datetime.date(1980, 1, 1))
+    giornalisti_nati = Giornalista.objects.filter(anno_di_nascita__lt=datetime.date(1980, 1, 1))
     articoli_giornalisti = Articolo.objects.filter(giornalista__in=giornalisti_nati)
 
     #11 il giornalista più giovane
